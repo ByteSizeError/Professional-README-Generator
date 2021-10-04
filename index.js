@@ -39,7 +39,7 @@ const questions = [
     type: 'list',
     message: 'Licenses:',
     name: 'license',
-    choices: ['Apache License 2.0', 'Boost Software License 1.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'ISC License', 'MIT License', 'Mozilla Public License 2.0', 'The Unlicense'],
+    choices: ['Apache License 2.0', 'Boost Software License 1.0', 'GNU AGPL v3', 'GNU GPL v3', 'GNU LGPL v3', 'ISC License', 'MIT License', 'Mozilla Public License 2.0', 'The Unlicense'],
   },
   {
     type: 'input',
@@ -69,7 +69,6 @@ function init() {
     .then((data) => {
       const fileName = 'README.md';
       writeToFile(fileName, data);
-
     });
 }
 
