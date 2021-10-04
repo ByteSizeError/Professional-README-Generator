@@ -68,7 +68,8 @@ function init() {
     )
     .then((data) => {
       const fileName = 'README.md';
-      writeToFile(fileName, data);
+      //writeToFile(fileName, data);
+      console.log("README Success!");
     });
 }
 
